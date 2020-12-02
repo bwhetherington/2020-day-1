@@ -65,7 +65,7 @@ const POLICY_REGEX: &'static str = r"(?P<min>[0-9]+)-(?P<max>[0-9]+) (?P<letter>
 
 fn main() {
     let policy_regex = Regex::new(POLICY_REGEX).unwrap();
-    let file = "./test.txt";
+    let file = "./input.txt";
     let count = count_valid_pwds(file, &policy_regex).unwrap();
     println!("{}", count);
 }
